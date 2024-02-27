@@ -8,7 +8,7 @@ import warnings
 
 warnings.filterwarnings('ignore')
  
-def linkedin_scraper(webpage, page_number, pageend):
+def not_linkedin_scraper(webpage, page_number, pageend):
     next_page = webpage + str(page_number)
     driver = webdriver.Chrome()
     driver.get("https://linkedin.com/uas/login")
@@ -74,4 +74,7 @@ def linkedin_scraper(webpage, page_number, pageend):
         i=i+1
         profile_url = next_page = webpage + "&page=" + str(i)
 
-linkedin_scraper('https://www.linkedin.com/search/results/people/?keywords=product%20manager%20singapore&origin=GLOBAL_SEARCH_HEADER', 1, 5)
+# Do not uncomment this function
+# I mean you could 
+# But DON'TTTTTTTT
+# not_linkedin_scraper('https://www.linkedin.com/search/results/people/?keywords=product%20manager%20singapore&origin=GLOBAL_SEARCH_HEADER', 1, 5)
